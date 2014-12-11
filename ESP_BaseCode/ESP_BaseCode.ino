@@ -11,6 +11,7 @@
 ** PLEASE TEACH ME TO CODE WELL! I MIGHT BE DOING A LOT INCORRECT! **
 *********************************************************************/
 
+//TODO: Error Checking, Set up post properly
 
 #include <SoftwareSerial.h>
 #include <avr/sleep.h>
@@ -21,8 +22,8 @@
 volatile int sleep_count = 0;  
 byte sleep_total = 7;  //Number of times to sleep (sleeps for 8 seconds at a time)
 
-#define SSID  "Telstra991ACF"
-#define PASS  "B8733AD408"
+#define SSID  "**************yourSSID*********"
+#define PASS  "************yourPassword*********"
 
 ESP wifi(ESP_RXD, ESP_TXD, ESP_ENB);
 
