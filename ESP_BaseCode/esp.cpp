@@ -151,9 +151,9 @@ boolean ESP::postData(char* _data2Post){
     return false;
   }
 
-  cmd = "PUT http://api.xively.com/v2/feeds/233254428.csv HTTP/1.0\r\n";
+  cmd = "PUT http://api.xively.com/v2/feeds/***********your FEED************.csv HTTP/1.0\r\n";
   cmd += "Host: api.xively.com\r\n";
-  cmd += "X-PachubeApiKey: ESedpDyBOeDcbANwcHvh5Wz104WtDTZYkRTsGPPMMgZcz1bn\r\n"; 
+  cmd += "X-PachubeApiKey: ************************your KEY*********************\r\n"; 
   cmd += "Content-Length: " + String(length) + "\r\n\r\n";
   cmd += _data2Post;
   
@@ -170,3 +170,4 @@ boolean ESP::postData(char* _data2Post){
   enabled(false);
   return true;
 }
+
