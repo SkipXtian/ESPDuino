@@ -20,7 +20,7 @@
   _debugEnabled = debug;
   
   // Instantiate a new SoftwareSerial object for the ESP module
-  _ESPSerial = new SoftwareSerial(_rxPin, _rxPin);
+  _ESPSerial = new SoftwareSerial(_rxPin, _txPin);
 }
 
 /***********************************************************************
