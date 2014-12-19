@@ -270,7 +270,7 @@ boolean ESPduino::get(char* ip, int port, char* uri) {//, int* httpResponseCode,
   }
 
   // Attempt a TCP Connection
-  if(_tcpConnect(ip, 80) != true) {
+  if(_tcpConnect(ip, port) != true) {
       _debug("TCP connection failed, aborting GET");
 
       return false;
