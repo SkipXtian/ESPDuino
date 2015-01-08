@@ -191,7 +191,6 @@ void ESPduino::_debug(char* s){
   String cmd = "AT+RST";  
   _debug(cmd);
   _ESPSerial->println(cmd);  
-  delay(2000);
 
   // Search for a ready status
   if (_ESPSerial->find("ready")){
